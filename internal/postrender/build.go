@@ -22,7 +22,7 @@ import (
 	"github.com/opencontainers/go-digest"
 	helmpostrender "helm.sh/helm/v3/pkg/postrender"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
 )
 
 // BuildPostRenderers creates the post-renderer instances from a HelmRelease

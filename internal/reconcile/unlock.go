@@ -28,10 +28,10 @@ import (
 
 	"github.com/fluxcd/pkg/runtime/conditions"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/release"
-	"github.com/fluxcd/helm-controller/internal/storage"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/release"
+	"github.com/fluxcd/tanka-controller/internal/storage"
 )
 
 // Unlock is an ActionReconciler which attempts to unlock the latest release

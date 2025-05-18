@@ -29,15 +29,15 @@ COPY internal/ internal/
 
 # build without specifing the arch
 ENV CGO_ENABLED=0
-RUN xx-go build -trimpath -a -o helm-controller main.go
+RUN xx-go build -trimpath -a -o tanka-controller main.go
 
 FROM alpine:3.21
 
 RUN apk add --no-cache ca-certificates \
     && update-ca-certificates
 
-COPY --from=builder /workspace/helm-controller /usr/local/bin/
+COPY --from=builder /workspace/tanka-controller /usr/local/bin/
 
 USER 65534:65534
 
-ENTRYPOINT [ "helm-controller" ]
+ENTRYPOINT [ "tanka-controller" ]

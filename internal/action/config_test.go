@@ -28,8 +28,8 @@ import (
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 	cmdtest "k8s.io/kubectl/pkg/cmd/testing"
 
-	"github.com/fluxcd/helm-controller/internal/kube"
-	"github.com/fluxcd/helm-controller/internal/storage"
+	"github.com/fluxcd/tanka-controller/internal/kube"
+	"github.com/fluxcd/tanka-controller/internal/storage"
 )
 
 func TestNewConfigFactory(t *testing.T) {

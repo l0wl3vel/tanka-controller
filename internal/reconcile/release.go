@@ -26,10 +26,10 @@ import (
 	helmrelease "helm.sh/helm/v3/pkg/release"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/release"
-	"github.com/fluxcd/helm-controller/internal/storage"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/release"
+	"github.com/fluxcd/tanka-controller/internal/storage"
 )
 
 var (

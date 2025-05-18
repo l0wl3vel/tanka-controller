@@ -29,8 +29,8 @@ import (
 	"github.com/fluxcd/pkg/apis/meta"
 	"github.com/fluxcd/pkg/runtime/conditions"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
 )
 
 const (

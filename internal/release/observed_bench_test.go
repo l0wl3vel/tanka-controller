@@ -22,7 +22,7 @@ import (
 	"github.com/opencontainers/go-digest"
 	"helm.sh/helm/v3/pkg/release"
 
-	intdigest "github.com/fluxcd/helm-controller/internal/digest"
+	intdigest "github.com/fluxcd/tanka-controller/internal/digest"
 )
 
 func init() {

@@ -49,16 +49,17 @@ import (
 	sourcev1 "github.com/fluxcd/source-controller/api/v1"
 	sourcev1beta2 "github.com/fluxcd/source-controller/api/v1beta2"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	intdigest "github.com/fluxcd/helm-controller/internal/digest"
+	intdigest "github.com/fluxcd/tanka-controller/internal/digest"
+
+	tankav2alpha1 "github.com/fluxcd/tanka-controller/api/v2alpha1"
 
 	// +kubebuilder:scaffold:imports
 
-	intacl "github.com/fluxcd/helm-controller/internal/acl"
-	"github.com/fluxcd/helm-controller/internal/controller"
-	"github.com/fluxcd/helm-controller/internal/features"
-	intkube "github.com/fluxcd/helm-controller/internal/kube"
-	"github.com/fluxcd/helm-controller/internal/oomwatch"
+	intacl "github.com/fluxcd/tanka-controller/internal/acl"
+	"github.com/fluxcd/tanka-controller/internal/controller"
+	"github.com/fluxcd/tanka-controller/internal/features"
+	intkube "github.com/fluxcd/tanka-controller/internal/kube"
+	"github.com/fluxcd/tanka-controller/internal/oomwatch"
 )
 
 const controllerName = "helm-controller"
@@ -73,7 +74,7 @@ func init() {
 
 	utilruntime.Must(sourcev1.AddToScheme(scheme))
 	utilruntime.Must(sourcev1beta2.AddToScheme(scheme))
-	utilruntime.Must(v2.AddToScheme(scheme))
+	_ = tankav2alpha1.AddToScheme(scheme)
 	// +kubebuilder:scaffold:scheme
 }
 
@@ -290,6 +291,14 @@ func main() {
 		RateLimiter:               helper.GetRateLimiter(rateLimiterOptions),
 	}); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", v2.HelmReleaseKind)
+		os.Exit(1)
+	}
+	if err = (&controllers.TankaReleaseReconciler{
+		Client: mgr.GetClient(),
+		Log:    ctrl.Log.WithName("controllers").WithName("TankaRelease"),
+		Scheme: mgr.GetScheme(),
+	}).SetupWithManager(mgr); err != nil {
+		setupLog.Error(err, "unable to create controller", "controller", "TankaRelease")
 		os.Exit(1)
 	}
 	// +kubebuilder:scaffold:builder

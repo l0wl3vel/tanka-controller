@@ -34,8 +34,8 @@ import (
 	sourcev1 "github.com/fluxcd/source-controller/api/v1"
 	sourcev1beta2 "github.com/fluxcd/source-controller/api/v1beta2"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/acl"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/acl"
 )
 
 func TestHelmChartTemplate_Reconcile(t *testing.T) {

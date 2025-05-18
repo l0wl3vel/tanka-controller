@@ -1,14 +1,7 @@
 domain: toolkit.fluxcd.io
-repo: github.com/fluxcd/helm-controller
+repo: github.com/fluxcd/tanka-controller
 resources:
-- group: helm
-  kind: HelmRelease
-  version: v2beta1
-- group: helm
-  kind: HelmRelease
-  version: v2beta2
-- group: helm
-  kind: HelmRelease
-  version: v2
-storageVersion: v2
+- group: tanka
+  kind: TankaRelease
+  version: v2alpha1
 version: "2"

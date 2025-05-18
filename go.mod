@@ -1,8 +1,8 @@
-module github.com/fluxcd/helm-controller
+module github.com/fluxcd/tanka-controller
 
 go 1.24.0
 
-replace github.com/fluxcd/helm-controller/api => ./api
+replace github.com/fluxcd/tanka-controller/api => ./api
 
 // Replace digest lib to master to gather access to BLAKE3.
 // xref: https://github.com/opencontainers/go-digest/pull/66
@@ -17,7 +17,7 @@ replace (
 require (
 	github.com/Masterminds/semver/v3 v3.3.0
 	github.com/fluxcd/cli-utils v0.36.0-flux.13
-	github.com/fluxcd/helm-controller/api v1.2.0
+	github.com/fluxcd/tanka-controller/api v1.2.0
 	github.com/fluxcd/pkg/apis/acl v0.7.0
 	github.com/fluxcd/pkg/apis/event v0.17.0
 	github.com/fluxcd/pkg/apis/kustomize v1.10.0
@@ -82,7 +82,7 @@ require (
 	github.com/evanphx/json-patch v5.9.0+incompatible // indirect
 	github.com/evanphx/json-patch/v5 v5.9.11 // indirect
 	github.com/exponent-io/jsonpath v0.0.0-20210407135951-1de76d718b3f // indirect
-	github.com/fatih/color v1.16.0 // indirect
+	github.com/fatih/color v1.18.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.8.0 // indirect
@@ -102,6 +102,7 @@ require (
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674 // indirect
 	github.com/gosuri/uitable v0.0.4 // indirect
+	github.com/grafana/tanka v0.32.0 // indirect
 	github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect

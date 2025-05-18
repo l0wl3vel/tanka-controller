@@ -28,10 +28,10 @@ import (
 	helmrelease "helm.sh/helm/v3/pkg/release"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/digest"
-	interrors "github.com/fluxcd/helm-controller/internal/errors"
-	"github.com/fluxcd/helm-controller/internal/postrender"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/digest"
+	interrors "github.com/fluxcd/tanka-controller/internal/errors"
+	"github.com/fluxcd/tanka-controller/internal/postrender"
 )
 
 // ReleaseStatus represents the status of a Helm release as determined by

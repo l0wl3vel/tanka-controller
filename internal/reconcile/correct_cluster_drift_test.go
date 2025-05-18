@@ -34,9 +34,9 @@ import (
 	"github.com/fluxcd/pkg/ssa"
 	"github.com/fluxcd/pkg/ssa/jsondiff"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/testutil"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/testutil"
 )
 
 func TestCorrectClusterDrift_Reconcile(t *testing.T) {

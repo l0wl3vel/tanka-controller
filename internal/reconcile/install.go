@@ -28,10 +28,10 @@ import (
 
 	"github.com/fluxcd/pkg/runtime/conditions"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/digest"
 	"github.com/fluxcd/pkg/chartutil"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/digest"
 )
 
 // Install is an ActionReconciler which attempts to install a Helm release

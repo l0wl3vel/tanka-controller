@@ -25,7 +25,7 @@ import (
 
 	"github.com/fluxcd/pkg/apis/kustomize"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
 )
 
 const replaceImageMock = `apiVersion: v1

@@ -25,7 +25,7 @@ import (
 	helmdriver "helm.sh/helm/v3/pkg/storage/driver"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
-	"github.com/fluxcd/helm-controller/internal/storage"
+	"github.com/fluxcd/tanka-controller/internal/storage"
 )
 
 const (

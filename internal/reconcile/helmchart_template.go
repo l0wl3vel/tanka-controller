@@ -34,9 +34,9 @@ import (
 	"github.com/fluxcd/pkg/ssa"
 	sourcev1 "github.com/fluxcd/source-controller/api/v1"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/acl"
-	"github.com/fluxcd/helm-controller/internal/strings"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/acl"
+	"github.com/fluxcd/tanka-controller/internal/strings"
 )
 
 // HelmChartTemplate attempts to create, update or delete a v1beta2.HelmChart

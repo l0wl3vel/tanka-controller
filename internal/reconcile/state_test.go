@@ -35,13 +35,13 @@ import (
 	ssanormalize "github.com/fluxcd/pkg/ssa/normalize"
 	ssautil "github.com/fluxcd/pkg/ssa/utils"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/digest"
-	"github.com/fluxcd/helm-controller/internal/kube"
-	"github.com/fluxcd/helm-controller/internal/postrender"
-	"github.com/fluxcd/helm-controller/internal/release"
-	"github.com/fluxcd/helm-controller/internal/testutil"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/digest"
+	"github.com/fluxcd/tanka-controller/internal/kube"
+	"github.com/fluxcd/tanka-controller/internal/postrender"
+	"github.com/fluxcd/tanka-controller/internal/release"
+	"github.com/fluxcd/tanka-controller/internal/testutil"
 )
 
 func Test_DetermineReleaseState(t *testing.T) {

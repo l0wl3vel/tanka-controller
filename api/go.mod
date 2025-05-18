@@ -1,4 +1,4 @@
-module github.com/fluxcd/helm-controller/api
+module github.com/fluxcd/tanka-controller/api
 
 go 1.24.0
 

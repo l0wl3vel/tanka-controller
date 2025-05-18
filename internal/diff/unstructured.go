@@ -20,7 +20,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	intcmp "github.com/fluxcd/helm-controller/internal/cmp"
+	intcmp "github.com/fluxcd/tanka-controller/internal/cmp"
 )
 
 // CompareOption is a function that modifies the unstructured object before

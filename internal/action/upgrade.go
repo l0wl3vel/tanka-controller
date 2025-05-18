@@ -25,10 +25,10 @@ import (
 	helmchartutil "helm.sh/helm/v3/pkg/chartutil"
 	helmrelease "helm.sh/helm/v3/pkg/release"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/features"
-	"github.com/fluxcd/helm-controller/internal/postrender"
-	"github.com/fluxcd/helm-controller/internal/release"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/features"
+	"github.com/fluxcd/tanka-controller/internal/postrender"
+	"github.com/fluxcd/tanka-controller/internal/release"
 )
 
 // UpgradeOption can be used to modify Helm's action.Upgrade after the instructions

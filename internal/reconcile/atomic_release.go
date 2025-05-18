@@ -35,12 +35,12 @@ import (
 	"github.com/fluxcd/pkg/runtime/patch"
 	"github.com/fluxcd/pkg/ssa/jsondiff"
 
-	v2 "github.com/fluxcd/helm-controller/api/v2"
-	"github.com/fluxcd/helm-controller/internal/action"
-	"github.com/fluxcd/helm-controller/internal/diff"
-	"github.com/fluxcd/helm-controller/internal/digest"
-	interrors "github.com/fluxcd/helm-controller/internal/errors"
-	"github.com/fluxcd/helm-controller/internal/postrender"
+	v2 "github.com/fluxcd/tanka-controller/api/v2"
+	"github.com/fluxcd/tanka-controller/internal/action"
+	"github.com/fluxcd/tanka-controller/internal/diff"
+	"github.com/fluxcd/tanka-controller/internal/digest"
+	interrors "github.com/fluxcd/tanka-controller/internal/errors"
+	"github.com/fluxcd/tanka-controller/internal/postrender"
 )
 
 // OwnedConditions is a list of Condition types owned by the HelmRelease object.

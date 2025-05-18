@@ -1,0 +1,24 @@
+# permissions for end users to edit tankareleases.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: tankarelease-editor-role
+rules:
+- apiGroups:
+  - tanka.toolkit.fluxcd.io
+  resources:
+  - tankareleases
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - tanka.toolkit.fluxcd.io
+  resources:
+  - tankareleases/status
+  verbs:
+  - get
